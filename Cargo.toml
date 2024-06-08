@@ -12,7 +12,9 @@ edition = "2021"
 
 [dependencies]
 tokio = { version = "1.36.0", default-features = false, features = ["sync"] }
-bevy = { git = "https://github.com/bevyengine/bevy.git", default-features = false }
+bevy = { git = "https://github.com/bevyengine/bevy.git", default-features = false, features = [
+  "multi_threaded",
+] }
 cfg-if = "1.0.0"
 async-std = "1.12.0"
 
